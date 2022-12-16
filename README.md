@@ -1,9 +1,19 @@
 # aleo-prover-release
 
 ## how to start
+
+* config your account pool address and client name
+
+update the `start.sh` to update **account** **pool** and **name** variable
+
 ```bash
 tar zxf aleo-release-x86_64-ubuntu.tgz 
-./start.sh ${miner_addreee} ${pool_address}
-> E.g 
-./start.sh aleo16jky0dfhvqsqlk5gaq966q6wt5jzyrffzh7xsvd7ngwz3dm0tgpq46kawg 127.0.0.1:11000
+cd aleo-release-x86_64-ubuntu
+## update start.sh (e.g. use vim)
+vim start.sh
+```
+
+* start the miner
+```bash
+./start.sh
 ```
